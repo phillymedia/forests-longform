@@ -1,0 +1,301 @@
+@import 'longform-styles';
+@import 'philly-styles/values';
+@import 'chartist.scss';
+
+
+// .ct-chart {
+//   height: 1000px;
+// }
+.ct-label.ct-horizontal {
+  font-size: 0.60rem;
+  margin-left: -10px;
+}
+
+.ct-series-a .ct-point, .ct-series-a .ct-line, .ct-series-a .ct-bar, .ct-series-a .ct-slice-donut {
+    stroke: rgb(43, 89, 39);
+}
+
+body {
+  background-color: $forest-tan!important;
+}
+
+.overlayText {
+    position: absolute;
+    top: auto;
+    bottom: 20%;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 1;
+    font-size: 80px;
+    font-weight: 400;
+    font-family: $philly-serif;
+    text-shadow: rgb(0, 0, 0) 0px 0px 15px;
+}
+
+.overlayText span {
+  color:rgb(243, 188, 7);
+  // text-transform: uppercase;
+  max-width: 800px;
+  font-family: $philly-sans;
+  font-size: 30px;
+  display: inline-flex;
+  font-weight: 500;
+  letter-spacing: normal;
+
+}
+
+
+
+
+.headerIntro {
+    // height: 100vh;
+    overflow: hidden;
+}
+
+.headerIntro video {
+    margin-top: 40px;
+}
+
+#wood-texture {
+    width: 100%;
+    position: absolute;
+    height: 500px;
+    background-size: cover;
+    background-image: url(http://media.philly.com/storage/inquirer/special%20project%20media/Forests/wood-texture_1.jpg);
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    z-index: -2;
+    margin-top: -10px;
+}
+
+#wood-texture div {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fcfcf9 100%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fcfcf9 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fcfcf9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#fcfcf9',GradientType=0 );
+}
+
+#headline-box {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+
+
+#headline-box h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 6.5vh;
+      max-width: 1100px;
+      margin: 40px auto;
+      z-index: 2;
+    position: relative;
+}
+
+#headline-box h3 {
+  text-align: center;
+  font-family: $philly-serif;
+  font-size: 3vh;
+      max-width: 1100px;
+      margin: 30px auto;
+      z-index: 2;
+    position: relative;
+}
+
+.meta-wrapper {
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  padding-top: 15px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.byline, .dateline {
+  color: #333;
+}
+
+
+.image-padding {
+  padding-bottom: 45px;
+}
+
+//
+
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yt-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.yt-name {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999;
+  font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,Gotham Narrow,Arial,sans-serif;
+  border-top: 0.5px solid #ddd;
+  padding-top: 10px;
+}
+
+.yt-title {
+  font-size: 28px;
+  color: #333;
+  line-height: 0.9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  font-family: Sentinel SSm A,Sentinel SSm B,Sentinel,Times New Roman,serif;
+}
+
+.yt-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.yt-outer .containerPhotoCaption {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.yt-outer .containerPhotoCaption strong {
+  color: #000;
+}
+
+.float-right {
+  float: right;
+  width: 100%;
+  margin-right: -30%;
+  padding: 20px 0 20px 20px;
+  @include desktop {
+    margin-right: 0;
+    max-width: 50% !important;
+  }
+  @include tablet {
+    max-width: 100% !important;
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+.float-right.large {
+  max-width: 700px;
+}
+
+.float-right.med {
+  max-width: 500px;
+}
+
+.float-right.small {
+  max-width: 400px;
+}
+
+
+.float-right.smaller {
+  max-width: 300px;
+  margin-bottom: 20px !important;
+  @include desktop {
+    max-width: 280px !important;
+  }
+  @include mobile {
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+  img {
+    @include mobile {
+      max-width: 75% !important;
+      margin: 0 10%;
+    }
+  }
+}
+
+.graphic {
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+
+.graphic p {
+  font-family: $philly-sans;
+  font-size: 16px;
+  line-height: 1.2;
+}
+//
+
+.credits {
+    width: 100%;
+    padding: 50px 20px 20px;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,Gotham Narrow,Arial,sans-serif;
+}
+
+.credits .creditItem {
+    padding: 6px 20px;
+    font-weight: 500;
+    color: #222;
+    font-size: 14px;
+}
+.credits .creditItem .title {
+    font-weight: 100;
+    color: gray;
+}
+
+
+//
+
+.bottom-vid {
+    margin-bottom: -5%;
+    z-index: -1;
+    position: relative;
+}
+
+//
+
+.aspect-ratio-outer {
+  width: 100%;
+  position: relative;
+  .aspect-ratio-inner {
+    padding-bottom: percentage(7/10);
+    position: relative;
+  }
+  #map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.map-container {
+  position: relative;
+}

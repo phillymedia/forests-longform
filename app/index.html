@@ -1,0 +1,44 @@
+<!--removeIf(production)-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>forests</title>
+
+    {% include "shell/style-links.html" ignore missing %}
+    <link rel="stylesheet" href="css/phillystyles.css">
+
+    <!--build:css min-files/styles.min.css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--endbuild-->
+
+
+</head>
+
+<body>
+    <div class="content is-subscriber" role="document">
+        {% include "shell/navigation.html" ignore missing %}
+        <!--endRemoveIf(production)-->
+        <div>
+            {% include "partials/stylesheets.html" %}
+        </div>
+        {% include "main-body.html" ignore missing %} {% include "partials/recirc-box.html" %}
+
+            <!--removeIf(production)-->
+            <script src="http://www.philly.com/includes/e32121b31e345f561b84372c2bf06282/jquery-2.0.0b2.js" type="text/javascript"></script>
+            <!--endRemoveIf(production)-->
+            {% include "partials/script-links.html" %}
+    
+
+        <!--removeIf(production)-->
+        <!--build:js min-files/main.min.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </div>
+</body>
+
+</html>
+<!--endRemoveIf(production)-->
